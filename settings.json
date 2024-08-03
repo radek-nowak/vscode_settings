@@ -1,0 +1,137 @@
+{
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.editor.enablePreview": true,
+    "editor.fontWeight": "normal",
+    "editor.inlayHints.enabled": "on",
+    "go.inlayHints.functionTypeParameters": true,
+    "go.inlayHints.assignVariableTypes": true,
+    "go.inlayHints.rangeVariableTypes": true,
+    "zenMode.showTabs": "single",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.restore": false,
+    "zenMode.silentNotifications": false,
+    "gopls": {
+        "ui.semanticTokens": true,
+
+        // you can optionally turn on these features for more colors
+        // see https://go.dev/issue/45753 and https://go.dev/issue/45792 
+        "ui.noSemanticString": true,  // delegates string syntax highlighting to vscode
+        "ui.noSemanticNumber": true,  // delegates number syntax highlighting to vscode
+      },
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+	        {
+	        	"before": ["K"],
+	        	"commands": ["editor.action.showHover"]
+	        },
+	        {
+	        	"before": ["]", "d"],
+	        	"commands": ["editor.action.marker.next"]
+	        },
+	        {
+	        	"before": ["[", "d"],
+	        	"commands": ["editor.action.marker.prev"]
+	        },
+	        {
+	        	"key": "<C-o>",
+	        	"command": "workbench.action.navigateBack"
+	        },
+	        {
+	        	"key": "<C-i>",
+	        	"command": "workbench.action.navigateForward"
+	        },
+	        {
+	        	"before": ["L"],
+	        	"commands": ["workbench.action.nextEditor"]
+	        },
+	        {
+	        	"before": ["H"],
+	        	"commands": ["workbench.action.previousEditor"]
+	        },
+          {
+            "before":["g","i"],
+            "commands":["editor.action.goToImplementation"]
+          },
+          {
+            "before":["<Leader>", "g","i"],
+            "commands":["editor.action.peekImplementation"]
+          },
+          {
+            "before": ["<C-h>"],
+            "after": ["<C-w>", "h"]
+          },
+          {
+            "before": ["<C-j>"],
+            "after": ["<C-w>", "j"]
+          },
+          {
+            "before": ["<C-k>"],
+            "after": ["<C-w>", "k"]
+          },
+          {
+            "before": ["<C-l>"],
+            "after": ["<C-w>", "l"]
+          },
+          {
+            "before": ["<Leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+          },
+          {
+            "before": ["<leader>", "r", "e"],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "o"],
+            "commands": [
+                "workbench.action.showEditorsInActiveGroup"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "g"],
+            "commands": [
+                "workbench.action.showAllSymbols"
+            ]
+        },
+        {
+            "before": ["<leader>", "e", "f"],
+            "commands": [
+                "revealInExplorer",
+            ],
+        },
+        {
+			"before": ["<Leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+        {
+			"before": ["<Leader>", "e", "e"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "c", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+    {
+      "before": ["<Leader>", "g", "s"],
+      "commands": ["git.stageSelectedRanges"]
+    },
+    {
+      "before": ["<Leader>", "g", "u"],
+      "commands": ["git.unstageSelectedRanges"]
+    },
+
+    ],
+}
